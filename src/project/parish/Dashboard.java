@@ -174,6 +174,11 @@ public class Dashboard extends javax.swing.JFrame {
         mnuZoneDivisions.setText("Zones");
 
         mnuManageZones.setText("Manage Zones");
+        mnuManageZones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuManageZonesActionPerformed(evt);
+            }
+        });
         mnuZoneDivisions.add(mnuManageZones);
         mnuZoneDivisions.add(jSeparator16);
 
@@ -329,10 +334,10 @@ public class Dashboard extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 571, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 621, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(1290, 630));
+        setSize(new java.awt.Dimension(1290, 680));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -399,6 +404,12 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
         ParishDetails.getObj().setVisible(true);
     }//GEN-LAST:event_mnuManageParishInfoMousePressed
+
+    private void mnuManageZonesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuManageZonesActionPerformed
+        // TODO add your handling code here:
+        ManageZones mz=new ManageZones();
+        mz.setVisible(true);
+    }//GEN-LAST:event_mnuManageZonesActionPerformed
 
     /**
      * @param args the command line arguments
