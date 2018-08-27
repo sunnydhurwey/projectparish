@@ -11,6 +11,7 @@ package project.parish;
  */
 import java.sql.*;
 import javax.swing.*;
+
 public class jConnect {
     
     Connection conn=null;
